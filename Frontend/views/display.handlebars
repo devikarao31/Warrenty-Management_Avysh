@@ -1,0 +1,30 @@
+<section id="displaywarr">
+    <table>
+        <thead>
+        <tr>
+            <th>Warranty Id</th>
+            <th>Warranty Name</th>
+            <th>Products</th>
+            <th>Duration</th>
+            <th>Resolution</th>
+            <th>Type</th>
+            <th>Extendable Duration</th>
+            <th>Extension Price</th>
+        </tr>
+        </thead>
+        <tbody>
+            {{#each warr}}
+            <tr>{{warrId}}</tr>
+            <tr>{{warrName}}</tr>
+            <tr>{{prodId}}</tr>
+            <tr>{{duration}}</tr>
+            <tr>{{resolution}}</tr>
+            <tr>{{type}}</tr>
+            <tr>{{extendDur}}</tr>
+            <tr>{{extendPrice}}</tr>
+            {{else}}
+            <h1>No Warranties</h1>
+            {{/each}}
+        </tbody>
+    </table>
+</section>
