@@ -14,16 +14,18 @@
         </thead>
         <tbody>
             {{#each warr}}
-            <tr>{{warrId}}</tr>
-            <tr>{{warrName}}</tr>
-            <tr>{{prodId}}</tr>
-            <tr>{{duration}}</tr>
-            <tr>{{resolution}}</tr>
-            <tr>{{type}}</tr>
-            <tr>{{extendDur}}</tr>
-            <tr>{{extendPrice}}</tr>
+            <tr>
+                <td>{{warrId}}</td>
+                <td>{{warrName}}</td>
+                <td>{{prodId}}</td>
+                <td>{{duration}}</td>
+                <td>{{resolution}}</td>
+                <td>{{type}}</td>
+                <td>{{extendDur}}</td>
+                <td>{{extendPrice}}</td>
+            </tr>
             {{else}}
-            <h1>No Warranties</h1>
+            <td>No Warranties</td>
             {{/each}}
         </tbody>
     </table>
