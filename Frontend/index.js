@@ -29,7 +29,7 @@ mongoose
     console.log("connected");
   })
   .catch((err) => {
-    console.log("err", err.message);
+    console.log("Not connected ", err.message);
   });
 
 //routes setup
@@ -54,6 +54,6 @@ app.get("/display", async (req, res) => {
 });
 
 //listen and port
-app.listen(3000, () => {
-  console.log("App is on 3000");
+app.listen(port, () => {
+  console.log("App is on ", port);
 });
